@@ -54,6 +54,13 @@ public class EmployeeController {
 			
 		  return "Employee details for given name successfully deleted";
 	  }
+	  @RequestMapping(method=RequestMethod.DELETE,value="/deleteEmployeeByNameAnand/{name}")
+	  public String deleteEmployeeByNameAannd(@PathVariable String name) {
+		    
+		  employee.deleteEmployeeByName(name);
+			
+		  return "Employee details for given name successfully deleted";
+	  } 
 	  
 	 @PostMapping("/addEmployee")
 	// @RequestMa pping(method=RequestMethod.POST,value="/addEmployee")
