@@ -32,6 +32,11 @@ public class DepartmentServiceImpl implements DepartmentService {
 		 return deptRepo.findById(id).get();
 		 
 	}
+	public Department getDepartmentAnand(int id) {
+		
+		 return deptRepo.findById(id).get();
+		 
+	}
 	
 	public Optional<Department> getDepartmentByName(String name) {
 		
