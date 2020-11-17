@@ -78,14 +78,6 @@ public class DepartmentController {
     	 
     	 return "Department record has been added successfully";
 	}
-  
-   @RequestMapping(method=RequestMethod.DELETE,value="/deleteDepartmentById/{id}")
-	public String deleteDepartment(@PathVariable int id) {
-	    
-	   department.deleteDepartment(id);
-		
-	   return "Department details for given id successfully deleted";
-	}
    
    @RequestMapping(method=RequestMethod.DELETE,value="/deleteDepartmentByName/{name}")
   	public String deleteDepartmentByName(@PathVariable String name) {
