@@ -102,6 +102,14 @@ public class DepartmentController {
   	
 	   return "Record Updated Successfully";
   	
-   }
+    }
+   @RequestMapping(method=RequestMethod.PUT,value="/updatedepartment/{deptId}")
+ 	public String updateDepartment(@RequestBody Department dept ,@PathVariable int deptId) {
+	   
+	   department.updateDepartment(dept,deptId);
+ 	
+	   return "Record Updated Successfully";
+ 	
+  }
 
 }
